@@ -62,7 +62,7 @@ const Task = ({ task, columnKey }) => {
     >
       <div className={`absolute top-2 right-2 w-3 h-3 rounded-full ${statusColors[task.status]}`}></div>
       
-      <h3 className="font-bold text-lg mb-1">{task.title}</h3>
+      <h3 className="font-bold text-lg mb-1 dark:text-gray-400">{task.title}</h3>
       <p className="text-gray-600 text-sm mb-2">{task.description}</p>
       
       {columnKey === 'inProgress' && task.dueDate && (
@@ -102,7 +102,7 @@ const Task = ({ task, columnKey }) => {
           {getMoveOptions().map(option => (
             <button
               key={option}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm"
+              className="block w-full text-left px-4 py-2 dark:text-gray-400 hover:bg-gray-300 text-sm"
               onClick={() => handleMove(option)}
             >
               Move to {option.charAt(0).toUpperCase() + option.slice(1)}

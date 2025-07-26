@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Kanban Task Board',
+  title: 'Todo List Application',
   description: 'A simple Kanban-style task management app',
 }
 

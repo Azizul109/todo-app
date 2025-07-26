@@ -59,7 +59,7 @@ const TaskModal = () => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-blue-200 rounded-lg p-6 w-full max-w-md">
+      <div className="dark:bg-gray-600 rounded-lg p-6 w-full max-w-md">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold">
             {selectedTask ? 'Edit Task' : 'Add New Task'}
@@ -114,7 +114,7 @@ const TaskModal = () => {
                 setIsModalOpen(false)
                 setSelectedTask(null)
               }}
-              className="px-4 py-2 border rounded hover:bg-gray-50"
+              className="px-4 py-2 border rounded dark:text-gray-400 hover:bg-gray-50"
             >
               Cancel
             </button>

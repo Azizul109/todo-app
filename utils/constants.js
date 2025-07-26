@@ -1,22 +1,22 @@
 export const COLUMNS = {
     todo: {
-      title: 'To Do',
+      title: 'New',
       color: {
-        bg: 'bg-blue-50',
+        bg: 'bg-gray-700',
         border: 'border-blue-200'
       }
     },
     inProgress: {
-      title: 'In Progress',
+      title: 'Ongoing',
       color: {
-        bg: 'bg-orange-50',
+        bg: 'bg-gray-700',
         border: 'border-orange-200'
       }
     },
     done: {
       title: 'Done',
       color: {
-        bg: 'bg-green-50',
+        bg: 'bg-gray-700',
         border: 'border-green-200'
       }
     }

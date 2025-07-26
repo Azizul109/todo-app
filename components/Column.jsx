@@ -35,7 +35,7 @@ const Column = ({ columnKey, title }) => {
     >
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">{title}</h2>
-        <span className="px-2 py-1 bg-white rounded-full text-sm">
+        <span className="px-2 py-1 dark:bg-gray-600 rounded-full text-sm">
           {columnTasks.length}
         </span>
       </div>
@@ -43,7 +43,7 @@ const Column = ({ columnKey, title }) => {
       {columnKey === "todo" && (
         <button
           onClick={handleAddTask}
-          className="w-full mb-4 p-2 bg-white rounded-lg border border-dashed hover:bg-gray-50 transition"
+          className="w-full mb-4 p-2 dark:bg-gray-800 rounded-lg border border-dashed hover:dark:bg-gray-600 transition"
         >
           + Add Task
         </button>
