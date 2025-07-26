@@ -3,9 +3,22 @@
 @tailwind utilities;
 
 body {
-  @apply bg-blue-500;
+    @apply bg-blue-500;
 }
 
 .task-card {
-  @apply p-4 rounded-lg bg-white shadow-sm border hover:shadow-md transition cursor-pointer;
+    @apply p-4 rounded-lg bg-white shadow-sm border hover:shadow-md transition cursor-pointer;
+}
+
+[role="button"] {
+    cursor: grab;
+}
+
+[role="button"]:active {
+    cursor: grabbing;
+}
+
+.dragging {
+    opacity: 0.5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
