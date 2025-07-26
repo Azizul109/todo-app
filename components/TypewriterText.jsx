@@ -50,7 +50,7 @@ export const TypewriterText = ({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
-          className="text-lg font-medium dark:text-gray-300 text-center"
+          className="text-2xl font-medium dark:text-white text-center"
         >
           {currentText}
           <motion.span
